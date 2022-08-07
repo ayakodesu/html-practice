@@ -1,9 +1,9 @@
 /* ブラウザがそれぞれ持っているCSSをリセットするための記述*/
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   color: #6c6b6b;
+  color: #6c6b6b;
 }
 
 a {
@@ -11,13 +11,13 @@ a {
 }
 
 header {
-  width: 90%;
+  width: 90%; /* 横幅90% */
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
 }
 
-header .heading {
+header .heading { /* headerタグ内のheadingクラスにのみ反映される */
   font-size: 32px;
 }
 
@@ -33,36 +33,46 @@ header .heading {
   margin: 0 20px;
 }
 
-
 .main-visual {
   width: 100%; /* 横幅いっぱい */
   height: 300px; /* 高さ300px */
-
+   background-image: url(img/mv.jpg);
+   background-size: cover;
+   background-position: center;
 }
 
 .main-visual-content {
-  width: 350px;
+  width: 40%;
   height: 300px;
+  background-color: rgba( 0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 105px;
+}
 
+.main-visual-text {
+  color: #fff; /* 文字色を白に変更 */
+}
+
+.main-visual-name {
+  margin-top: 30px; /* 上側の外側の余白 */
+  color: #fff; /* 文字色を白に変更 */
 }
 
 .main {
-  width: 840px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  width: 840px; /* 横幅840px */
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 要素の横並び・中央寄せ */
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
 }
 
 .blog {
-  width: 600px;
-  height: 1400px;
-
+  width: 600px; /* 横幅600px */
+  height: 1400px; /* 高さ1400px */
 }
 
 .sidebar {
-  width: 240px;
-  height: 1400px;
-
+  width: 240px; /* 横幅240px */
+  height: 1400px; /* 高さ1400px */
 }
 
 footer {
@@ -71,7 +81,6 @@ footer {
   text-align: center;
   line-height: 120px;
   background-color: #848282;
-
 }
 
 .footer-text {
